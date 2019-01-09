@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Oppgave2 {
-
+//Må også oppdattere filnavnet til det samme navnet som på klassen
     public static void main(String[] args) {
         // Oppretter og instansierer et objekt av typen Scanner
         Scanner scanner = new Scanner(System.in);
