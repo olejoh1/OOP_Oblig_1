@@ -13,7 +13,7 @@ public class person{
         String etternavn = scanner.nextLine();
 
         System.out.println("Skriv inn aldedr: ");
-        int alder = scanner.nextInt();
+        String alder = scanner.nextLine();
 
         System.out.println("Ditt navn er: " + fornavn + " " + etternavn +"\n" + "Din alder er: " + alder);
     }
