@@ -15,7 +15,10 @@ public class Oppgave2 {
 
         String etternavn = scanner.nextLine();
 
-        System.out.println("Ditt navn er: " + fornavn + " " + etternavn);
+        System.out.println("Skriv inn aldedr: ");
+        int alder = scanner.nextInt();
+
+        System.out.println("Ditt navn er: " + fornavn + " " + etternavn +"\n" + "Din alder er: " + alder);
     }
 
 }
