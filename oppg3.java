@@ -1,11 +1,15 @@
 import java.util.Scanner;
 
-public class oppg3{
+public class oppg3 extends Thread{
 
     public static String fornavn, etternavn;
     public static int alder;
 
     public static void main(String[] args) {
+
+        Thread t = Thread.currentThread();
+
+        t.setPriority(10);
 
         Scanner scanner = new Scanner(System.in);
 
@@ -20,11 +24,18 @@ public class oppg3{
         System.out.println("Skriv inn aldedr: ");
         int alder = scanner.nextInt();
 
+        ChildThread ct = new ChildThread();
+
+        ct.setPriority(1);
+
+        ct.start();
+
     }
 
-    public void printPersonInformasjon(){
-
+    class ChildThread extends Thread{
+        public void run(){
         System.out.println("Navn: " + oppg3.fornavn + " " + oppg3.etternavn + "\n" + "Alder: " + oppg3.alder);
+        }
 
     }
 
