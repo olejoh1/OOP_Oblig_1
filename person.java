@@ -18,18 +18,7 @@ public class Person {
         System.out.println("Skriv inn aldedr: ");
         int alder = scanner.nextInt();
 
-    }
-
-    Person(String fornavn, String etternavn, int alder){
-
-        Person person1 = new Person(fornavn, etternavn, alder);
-
-    }
-
-    public void printPerson() {
-
-        System.out.println(person1);
-
+        System.out.println("Ditt navn er: " + fornavn + " " + etternavn +"\n" + "Din alder er: " + alder);
     }
 
 }
