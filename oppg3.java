@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class oppg3{
 
-    public String fornavn, etternavn;
-    public int alder;
+    public static String fornavn, etternavn;
+    public static int alder;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -24,7 +24,7 @@ public class oppg3{
 
     public void printPersonInformasjon(){
 
-        System.out.println("Navn: " + fornavn + " " + etternavn + "\n" + "Alder: " + alder);
+        System.out.println("Navn: " + oppg3.fornavn + " " + oppg3.etternavn + "\n" + "Alder: " + oppg3.alder);
 
     }
 
