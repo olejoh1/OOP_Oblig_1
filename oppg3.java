@@ -20,6 +20,8 @@ public class oppg3 {
         System.out.println("Skriv inn aldedr: ");
         int alder = scanner.nextInt();
 
+        Person person1 = new Person(fornavn, etternavn, alder);
+
         System.out.println("Navn: " + fornavn + " " + etternavn + "\n" + "Alder: " + alder);
 
     }
