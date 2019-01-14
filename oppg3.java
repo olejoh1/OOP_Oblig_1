@@ -1,29 +1,24 @@
 import java.util.Scanner;
 
-public class oppg3 {
+public class Oppg3 {
 
-    public static String fornavn, etternavn;
-    public static int alder;
+	public static void main(String[] args) {
 
-    public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 
-        Scanner scanner = new Scanner(System.in);
+		System.out.println("Skriv inn fornavn: ");
+		String fornavn = scanner.nextLine();
 
-        System.out.println("Skriv inn fornavn: ");
+		System.out.println("Skriv inn etternavn: ");
+		String etternavn = scanner.nextLine();
 
-        String fornavn = scanner.nextLine();
+		System.out.println("Skriv inn alder: ");
+		int alder = scanner.nextInt();
 
-        System.out.println("Skriv inn etternavn: ");
+		Person person = new Person(fornavn, etternavn, alder);
+		System.out.println(
+				"Navn: " + person.getFornavn() + " " + person.getEtternavn() + "\n" + "Alder: " + person.getAlder());
 
-        String etternavn = scanner.nextLine();
-
-        System.out.println("Skriv inn aldedr: ");
-        int alder = scanner.nextInt();
-
-        Person person1 = new Person(fornavn, etternavn, alder);
-
-        System.out.println("Navn: " + fornavn + " " + etternavn + "\n" + "Alder: " + alder);
-
-    }
-
+		scanner.close();
+	}
 }
