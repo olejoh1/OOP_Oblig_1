@@ -1,15 +1,24 @@
-public class person{
+public class Person {
+    //Classen blir brukt av Oppg3
+	private String fornavn;
+	private String etternavn;
+	private int alder;
 
-    public static void main(String[] args){
+	public Person(String fornavn, String etternavn, int alder) {
+		this.fornavn = fornavn;
+		this.etternavn = etternavn;
+		this.alder = alder;
+	}
 
-        Person person1 = new Person();
-        
-        person1.fornavn="Nikolai";
-        person1.etternavn="Tesle";
-        person1.alder=86;
+	public String getFornavn() {
+		return this.fornavn;
+	}
 
-        person1.printStudentInformasjon();
+	public String getEtternavn() {
+		return this.etternavn;
+	}
 
-    }
-
+	public int getAlder() {
+		return this.alder;
+	}
 }
