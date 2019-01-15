@@ -43,18 +43,17 @@ public class Oppg4 {
                 
         personer.add(person);
 
-        //Add option to show array
-        System.out.println("\nVil du se hele listen over personer?" + "\nEnter Yes/No");
+        System.out.println("\nVil du se hele listen over personer?" + "\nEnter Ja eller Nei");
         String answer2 = scanner.nextLine();
 
-        if (answer2.equalsIgnoreCase("Yes")){
+        if (answer2.equalsIgnoreCase("Ja")){
             for(int i = 0; i < personer.size(); i++) {
                 System.out.println("\nNavn: " + personer.get(i).getFornavn() + " " + personer.get(i).getEtternavn() + "\nAlder: " + personer.get(i).getAlder());
             }
         }
 
-        else if (answer2.equalsIgnoreCase("No")){
-            System.out.println("\nKanskje neste gang");
+        else if (answer2.equalsIgnoreCase("Nei")){
+            System.out.println("\nKanskje neste gang :(");
         }
 
     }
