@@ -1,5 +1,5 @@
 public class Person {
-    //Classen blir brukt av Oppg3
+    //Classen blir brukt av Oppg3 og Oppg4
 	private String fornavn;
 	private String etternavn;
 	private int alder;
