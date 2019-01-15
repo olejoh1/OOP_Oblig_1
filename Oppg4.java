@@ -37,10 +37,10 @@ public class Oppg4 {
             System.out.println("Skriv inn alder: ");
                 int alder = -1;
                 try {
-                    Integer.parseInt(scanner.nextLine());
+                   alder = Integer.parseInt(scanner.nextLine());
                 } catch(Exception e) {
                     System.err.println(e.getMessage());
-                
+                }
 
             Person person = new Person(fornavn, etternavn, alder);
             System.out.println(
