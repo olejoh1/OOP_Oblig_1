@@ -21,8 +21,8 @@ public class Oppg4 {
         String answer = scanner.nextLine();
 
         if (answer.equalsIgnoreCase("Se")){
-            for(int i = 0; i < personer.size(); i++) {
-                System.out.println(personer.get(i));
+            for(Person i : personer) {
+                System.out.println(i);
             }
         }
 
@@ -48,8 +48,8 @@ public class Oppg4 {
         String answer2 = scanner.nextLine();
 
         if (answer2.equalsIgnoreCase("Yes")){
-            for(int i = 0; i < personer.size(); i++) {
-                System.out.println(personer.get(i));
+            for(Person i : personer) {
+                System.out.println(i);
             }
         }
 
