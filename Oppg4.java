@@ -7,7 +7,26 @@ public class Oppg4 {
 
 	public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in);
+        Person person1 = new Person("Nikolai", "Tesla", 86);
+        Person person2 = new Person("Tom", "Pettersen", 64);
+        Person person3 = new Person("Per", "Johansen", 13);
+
+        personer.add(person1);
+        personer.add(person2);
+        personer.add(person3);
+
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("\nVil du se hele listen over personer eller legge til person?" + "\nEnter Se eller Legg til");
+        String answer = scanner.nextLine();
+
+        if (answer.equalsIgnoreCase("Se")){
+            for(int i = 0; i < personer.size(); i++) {
+                System.out.println(personer.get(i));
+            }
+        }
+
+        else if (answer.equalsIgnoreCase("Legg til")){
 
 		System.out.println("Skriv inn fornavn: ");
 		String fornavn = scanner.nextLine();
@@ -26,17 +45,19 @@ public class Oppg4 {
 
         //Add option to show array
         System.out.println("\nVil du se hele listen over personer?" + "\nEnter Yes/No");
-        String answer = scanner.nextLine();
+        String answer2 = scanner.nextLine();
 
-        if (answer.equalsIgnoreCase("Yes")){
+        if (answer2.equalsIgnoreCase("Yes")){
             for(int i = 0; i < personer.size(); i++) {
                 System.out.println(personer.get(i));
             }
         }
 
-        else if (answer.equalsIgnoreCase("No")){
+        else if (answer2.equalsIgnoreCase("No")){
             System.out.println("\nKanskje neste gang");
         }
+
+    }
 
 
 
