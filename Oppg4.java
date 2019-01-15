@@ -28,35 +28,35 @@ public class Oppg4 {
 
         else if (answer.equalsIgnoreCase("Legg til")){
 
-		System.out.println("Skriv inn fornavn: ");
-		String fornavn = scanner.nextLine();
+            System.out.println("Skriv inn fornavn: ");
+            String fornavn = scanner.nextLine();
 
-		System.out.println("Skriv inn etternavn: ");
-		String etternavn = scanner.nextLine();
+            System.out.println("Skriv inn etternavn: ");
+            String etternavn = scanner.nextLine();
 
-		System.out.println("Skriv inn alder: ");
-		int alder = scanner.nextInt();
+            System.out.println("Skriv inn alder: ");
+            int alder = scanner.nextInt();
 
-		Person person = new Person(fornavn, etternavn, alder);
-		System.out.println(
-                "\nNavn: " + person.getFornavn() + " " + person.getEtternavn() + "\n" + "Alder: " + person.getAlder());
-                
-        personer.add(person);
+            Person person = new Person(fornavn, etternavn, alder);
+            System.out.println(
+                    "\nNavn: " + person.getFornavn() + " " + person.getEtternavn() + "\n" + "Alder: " + person.getAlder());
+                    
+            personer.add(person);
 
-        System.out.println("\nVil du se hele listen over personer?" + "\nEnter Ja eller Nei");
-        String answer2 = scanner.nextLine();
+            System.out.println("\nVil du se hele listen over personer?" + "\nEnter Ja eller Nei");
+            String answer2 = scanner.nextLine();
 
-        if (answer2.equalsIgnoreCase("Ja")){
-            for(int i = 0; i < personer.size(); i++) {
-                System.out.println("\nNavn: " + personer.get(i).getFornavn() + " " + personer.get(i).getEtternavn() + "\nAlder: " + personer.get(i).getAlder());
+            if (answer2.equalsIgnoreCase("Ja")){
+                for(int i = 0; i < personer.size(); i++) {
+                    System.out.println("\nNavn: " + personer.get(i).getFornavn() + " " + personer.get(i).getEtternavn() + "\nAlder: " + personer.get(i).getAlder());
+                }
             }
-        }
 
-        else if (answer2.equalsIgnoreCase("Nei")){
-            System.out.println("\nKanskje neste gang :(");
-        }
+            else if (answer2.equalsIgnoreCase("Nei")){
+                System.out.println("\nKanskje neste gang :(");
+            }
 
-    }
+        }
 
 
 
